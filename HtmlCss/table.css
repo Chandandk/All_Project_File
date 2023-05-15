@@ -1,0 +1,29 @@
+body  h2{
+    color: tomato;
+   
+}
+table,tr,th,td{
+    border: 1px solid rgb(6, 245, 193);
+    border-spacing: 5px;
+    border-collapse: collapse;
+    padding: 5px; 
+    margin: 10px;
+    
+    }
+    th{ 
+        text-align: center;
+        text-decoration: none;
+        color: rgb(9, 67, 75);
+        background-color: rgb(209, 193, 120);
+    }
+    td{
+        background-color: rgb(147, 112, 172);
+        text-align: center;
+    }
+    body table tr td.messi {
+        color: rgb(185, 6, 6);
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+
+    }

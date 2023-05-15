@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb_ON/OFF</title>
+    <link rel="stylesheet" href="bulb.on_off.css">
+    <link rel="stylesheet" href="bulb_on_off.js">
+</head>
+<body>
+    <div class="container flex">
+        <h1>Bulb ON/OFF</h1>
+      <img class="bulboff" src="img/bulb_off.png" alt="Bulb OFF">
+      
+      <div class="btn">
+        <button  onclick="bulbOn()">ON</button>
+        <button  onclick="bulbOff()">OFF</button>
+      </div>
+    </div>
+    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+    <script>
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.gif";
+      } else {
+        image.src = "pic_bulbon.gif";
+      }
+    }
+    </script>
+</body>
+</html>

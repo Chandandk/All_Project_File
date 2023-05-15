@@ -1,0 +1,31 @@
+
+
+.special,p,h1{   /*here we use combine selector type  */
+    color: crimson;font-weight: bold;font-size: 18;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h1+p{
+      color: rgb(68, 0, 255);
+      font-size: large;
+  } 
+  a:hover{
+   color: rgba(13, 14, 13, 0.932);
+   text-decoration: none; /*To remove underline from attached file pdf*/
+  }
+   
+body h2+p .special{
+    color: gold;
+    background-color: rgb(42, 7, 238);
+    padding: 20px;
+}
+
+#heading{
+ color: maroon;
+ background-color: black;
+
+}
+li[class=a]{
+    font-size: xx-large;
+   
+    
+
+}

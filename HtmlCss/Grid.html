@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Concept In CSS</title>
+    <style>
+        .container{
+            display: grid;
+            
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* Another way to write in abbriviate form  and 1fr means 1 fraction*/
+            grid-template-columns: repeat(3,1fr) ; 
+            /*grid-auto-rows: 50px;*/  /* fixed grid row here same way can fixed columns here*/
+            grid-gap: 10px;
+            row-gap: 10px;
+            column-gap: 90px;
+            /* grid-template-columns: repeat(auto-fill , minmax (200px,1fr)); */
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(50px,auto);
+
+        }
+        .box{
+            border: 2px solid black;
+            background-color: cornflowerblue;
+            margin: 2px;
+            padding: 1px;
+            text-align: center;
+        }
+        #box-1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .box-1-container{
+            display: grid;
+           grid-template-columns: repeat(3,1fr);
+
+        }
+        .nested-box{
+            border: 3px solid rgb(26, 201, 35);
+            background-color: yellow;
+            border-radius: 5px;
+           
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <!-- div.box#box{BOX-$}*6 -->
+        <div class="box box-1-container" id="box-1">
+            <div class="nested-box" >Box ke andar box -1</div>
+            <div class="nested-box" >Box ke andar box -2</div>
+            <div class="nested-box" >Box ke andar box -3</div>
+        </div>
+        <div class="box" id="box-2">BOX-2</div>
+        <div class="box" id="box-3">BOX-3</div>
+        <div class="box" id="box-4">BOX-4</div>
+        <div class="box" id="box-5">BOX-5</div>
+        <div class="box" id="box-6">BOX-6</div>
+    </div>
+
+</body>
+</html>

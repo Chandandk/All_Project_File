@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BE Final Year Form</title>
+    <style>
+		body {
+			background-color: #b8d8287e; /* Change to the color of your choice */
+		}
+	</style>
+    <style>
+        table,tr,td {
+            border:1px soild black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Form</h1>
+    <hr>
+    <form>
+        <label for="name">Name:&emsp;&nbsp;</label>
+        <input type="name" placeholder="Enter Your Name" value=""><br><br>
+        <label for="email">Email:&emsp;&nbsp;</label>
+        <input type="email" placeholder="Enter Your email id"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter Your Password"><br><br>
+        <label for="phone">Phone no:</label>
+        <input type="phone no" placeholder="Enter Your Phone Number"><br><br>
+
+        <!-- Selection area -->
+        <label for="gender">Gender &emsp;</label>
+        <select name="Gender" id="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+
+        <!-- input type for date -->
+        <input type="color" id="favcolor"name="favcolor" value="">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- textarea for address -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="5" cols="30"></textarea><br><br>
+
+        <label for="location">Prefered Location :</label><br>
+        <!-- // Radio button -->
+        
+            <input type="radio" id="Pune" name="Prefered location" value="">
+            <label for="pune">Pune</label><br>
+            <input type="radio" id="Delhi" name="Prefered location" value="">
+            <label for="pune">Delhi</label><br>
+            <input type="radio" id="Bangalore" name="Prefered location" value="">
+            <label for="pune">Bangalore</label><br>
+
+            <!-- List tag -->
+           <p style="color: blue;">I am blue</p>
+           <p style="color: green;">I am blue</p>
+           <p style="font-size: 20px;">I am blue</p>
+           <b>I am blue</b> <br>
+           <p>My favorite color is <del>blue</del> red.</p><br>
+           
+        <!--Photo upload input type is file  -->
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+        
+        <!-- Input type submit & Reset -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+    <!--from close here-->
+
+
+     <!-- <script>
+		// Preview uploaded image
+		const photoInput = document.getElementById('photo');
+		const previewImg = document.getElementById('preview');
+
+		photoInput.addEventListener('change', function() {
+			const file = this.files[0];
+			const reader = new FileReader();
+
+			reader.addEventListener('load', function() {
+				previewImg.src = reader.result;
+			});
+
+			reader.readAsDataURL(file);
+		});
+	</script> -->
+    
+</body>
+
+</html>

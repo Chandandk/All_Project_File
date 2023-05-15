@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body h3{
+       background-color: rgb(178, 193, 221);
+       color: tomato;
+      }
+      table ,tr ,th ,td{
+   border: 2px solid rgb(8, 189, 180);
+   padding: 2px;
+   margin-left: 1px;
+   border-spacing: 5px;
+   border-collapse:collapse;
+   
+  }
+  .id{
+    color: rgb(245, 12, 12);
+    position: relative;
+    left: 24px;
+  }
+  .name{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: rgb(55, 0, 255);
+  }
+
+
+
+    </style>
+    
+</head> 
+<body>
+  <h3>WiproPari Employee details table</h3>
+ <table>
+ 
+  <tr>
+   <th>Name</th>
+   <th>Employee ID</th>
+   <th>Dept</th>
+   <th>Salary</th>
+   <th>Phone</th>
+  </tr>
+<tr>
+  <td class="name">Vivek</td>
+  <td class="id">2031</td>
+  <td>Engg</td>
+  <td>90000</td>
+  <td>7875113338</td>
+</tr>
+<tr>
+  <td class="name">Rahul</td>
+  <td class="id">2032</td>
+  <td>Mech</td>
+  <td>60000</td>
+  <td>8208396230</td>
+</tr>
+<tr>
+  <td rowspan="2" class="name">Punit</td>
+  <td rowspan="2" class="id">3034</td>
+  <td >Sales</td>
+  <td rowspan="2">100000</td>
+  <td >8208396240</td>
+  <tr>
+    <td>Marketing</td>
+    <td>8043943536</td>
+  </tr>
+ 
+</tr>
+<tr>
+  <td class="name">Raj</td>
+  <td class="id">3002</td>
+  <td>Project</td>
+  <td>75000</td>
+  <td>7578113339</td>
+</tr>
+<tr>
+  <td colspan="5">Total no of Employee: 4</td>
+</tr>
+
+ </table>
+ 
+
+</body>
+</html>
+

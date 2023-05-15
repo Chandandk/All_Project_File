@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries</title>
+    <style>
+        .box{
+            background-color: hotpink;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 72px;
+            display:none;
+        }
+     @media (max-width:380px) {
+        #box-1{
+            display: block;
+            background-color: aqua;
+        }
+     }
+     @media (min-width:400px) and (max-width:420px) {
+        #box-2{
+            display: block;
+            background-color: rgb(9, 78, 14);
+        }
+    }
+        @media (min-width:800px) and (max-width:850px) {
+        #box-3{
+            display: block;
+            background-color: rgb(162, 196, 10);
+        }
+    }
+        @media (min-width:1000px) and (max-width:1050px) {
+        #box-4{
+            display: block;
+            background-color: rgb(226, 130, 117);
+        }
+     }
+    </style>
+</head>
+<body>
+  <div class="box" id="box-1">iPhone SE</div>
+  <div class="box" id="box-2">iPhone XR</div>
+  <div class="box" id="box-3">iPad Air</div>
+  <div class="box" id="box-4">Next Hub</div>
+    
+</body>
+</html>
